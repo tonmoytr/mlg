@@ -70,12 +70,18 @@
         z-index: 1;
         padding: 4em 2em;
       }
+
+      button {
+        padding: 1em 2em;
+        font-size: 1rem;
+        cursor: pointer;
+      }
     </style>
   </head>
 
   <body>
     <div class="video-background">
-      <video autoplay loop playsinline>
+      <video id="bgVideo" loop playsinline>
         <source src="./vid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -86,6 +92,9 @@
         <div
           class="flex items-center gap-2 absolute md:right-10 right-5 md:top-10 top-5"
         >
+          <button onclick="enableSound()">
+            <img class="w-12 h-12" src="./megaphone.png" alt="">
+          </button>
           <a
             href="https://x.com/i/communities/1939253982792499603"
             class="animate__backInDown animate__animated wow"
@@ -192,7 +201,9 @@
           alt=""
           class="w-full max-w-[564px] mx-auto animate__bounceInUp wow animate__animated mb-5"
         />
-        <p class="md:text-2xl text-center text-sm font-bold mb-10 bg-gray-100 text-black">
+        <p
+          class="md:text-2xl text-center text-sm font-bold mb-10 bg-gray-100 text-black"
+        >
           contract : 0x42009AE872fF0a21365E4389C318Ec67eBc29bF5
         </p>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
@@ -442,6 +453,20 @@
       </div>
     </main>
     <!-- script  -->
+    <script>
+      const video = document.getElementById("bgVideo");
+
+      function enableSound() {
+        video.volume = 0.3;
+        video.muted = false;
+        video.play();
+      }
+
+      window.addEventListener("load", () => {
+        video.muted = true;
+        video.play();
+      });
+    </script>
     <script>
       wow = new WOW({
         boxClass: "wow",
