@@ -22,68 +22,130 @@
 
     <title>420BLAZEIT - $MLG</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: "Single Day", cursive;
+        color: white;
+      }
+
+      /* Fixed background container */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -2;
+      }
+
+      /* Video styling */
+      .video-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Dark overlay */
+      .overlay-l {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.9)
+        ); /* or use a gradient */
+        z-index: -1;
+      }
+
+      /* Page content */
+      .main-body {
+        position: relative;
+        z-index: 1;
+        padding: 4em 2em;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="header h-[837px] relative">
-      <div
-        class="flex items-center gap-2 absolute md:right-10 right-5 md:top-10 top-5"
-      >
-        <a
-          href="https://x.com/i/communities/1939253982792499603"
-          class="animate__backInDown animate__animated wow"
+    <div class="video-background">
+      <video autoplay loop playsinline>
+        <source src="./vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="overlay-l"></div>
+    <main class="main-body">
+      <div class="h-[837px] relative">
+        <div
+          class="flex items-center gap-2 absolute md:right-10 right-5 md:top-10 top-5"
         >
-          <img
-            src="images/twitter.png"
-            alt=""
-            class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
-          />
-        </a>
-        <a
-          href="https://t.me/mlgonklik"
-          class="animate__backInDown animate__animated wow"
-        >
-          <img
-            src="images/telegram.png"
-            alt=""
-            class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
-          />
-        </a>
+          <a
+            href="https://x.com/i/communities/1939253982792499603"
+            class="animate__backInDown animate__animated wow"
+          >
+            <img
+              src="images/twitter.png"
+              alt=""
+              class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
+            />
+          </a>
+          <a
+            href="https://t.me/mlgonklik"
+            class="animate__backInDown animate__animated wow"
+          >
+            <img
+              src="images/telegram.png"
+              alt=""
+              class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
+            />
+          </a>
 
-        <a
-          href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x42009ae872ff0a21365e4389c318ec67ebc29bf5"
-          class="animate__backInDown animate__animated wow"
-        >
+          <a
+            href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x42009ae872ff0a21365e4389c318ec67ebc29bf5"
+            class="animate__backInDown animate__animated wow"
+          >
+            <img
+              src="images/buynow.png"
+              alt=""
+              class="w-full md:max-w-[179.29px] max-w-24 ml-5 hover:-rotate-6 transition ease-in-out delay-150"
+            />
+          </a>
+        </div>
+        <div class="">
           <img
-            src="images/buynow.png"
+            style="width: 530px; max-width: 95%; border-radius: 50%"
+            src="./logo.png"
             alt=""
-            class="w-full md:max-w-[179.29px] max-w-24 ml-5 hover:-rotate-6 transition ease-in-out delay-150"
+            class="animated-image animate__flash animate__animated wow w-full md:max-w-[950px] max-w-[370px] absolute md:top-[40%] top-[20%] md:left-[15%] lg:left-[43%] left-[10%] md:translate-x-[-15%] md:translate-y-[-40%]"
           />
-        </a>
-      </div>
-      <div class="">
-        <img
-          style="width: 530px; max-width: 95%; border-radius: 50%"
-          src="./logo.png"
-          alt=""
-          class="animated-image animate__flash animate__animated wow w-full md:max-w-[950px] max-w-[370px] absolute md:top-[40%] top-[20%] md:left-[15%] lg:left-[43%] left-[10%] md:translate-x-[-15%] md:translate-y-[-40%]"
-        />
-        <!-- <img src="/ezgif-3-6eaabb5bdf.gif" alt=""
+          <h2
+            class="absolute md:bottom-[10%] bottom-[5%] md:left-[43%] lg:left-[41%] left-[10%] md:translate-x-[-15%] md:translate-y-[-40%] text-3xl md:text-6xl font-extrabold text-white"
+          >
+            First Uniswap V4 launch on Klik
+          </h2>
+          <!-- <img src="/ezgif-3-6eaabb5bdf.gif" alt=""
         class="md:max-w-[450px] max-w-[500px] absolute bottom-0 right-0 animate__bounceInUp animate__animated wow"
         style="width: 35%; border-radius: 20px; margin-bottom: 5%;margin-right: 1rem;"> -->
-      </div>
-    </div>
-    <div>
-      <marquee class="bg-[#33FF91] py-4 border-y-4 border-black uppercase">
-        <div class="customfont md:text-3xl text-xl text-black font-bold">
-          420BLAZEIT - $MLG 420BLAZEIT - $MLG 420BLAZEIT - $MLG- 420BLAZEIT -
-          $MLG 420BLAZEIT - $MLG 420BLAZEIT - $MLG 420BLAZEIT - $MLG 420BLAZEIT
-          - $MLG 420BLAZEIT - $MLG- 420BLAZEIT - $MLG 420BLAZEIT - $MLG
-          420BLAZEIT - $MLG
         </div>
-      </marquee>
-    </div>
-    <div class="bg-[#212121] md:py-16">
+      </div>
+      <div>
+        <marquee class="bg-gray-200 py-4 border-y-4 border-black uppercase">
+          <div class="customfont md:text-3xl text-xl text-black font-bold">
+            420BLAZEIT - $MLG 420BLAZEIT - $MLG 420BLAZEIT - $MLG- 420BLAZEIT -
+            $MLG 420BLAZEIT - $MLG 420BLAZEIT - $MLG 420BLAZEIT - $MLG
+            420BLAZEIT - $MLG 420BLAZEIT - $MLG- 420BLAZEIT - $MLG 420BLAZEIT -
+            $MLG 420BLAZEIT - $MLG
+          </div>
+        </marquee>
+      </div>
+      <!-- <div class="bg-[#212121] md:py-16">
       <div
         class="about 2xl:h-[1043px] md:h-[700px] h-[800px] flex items-center justify-center relative"
       >
@@ -106,10 +168,10 @@
           <br /><br class="md:block hidden" />
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <!-- video -->
-    <div class="bg-[#212121] md:py-16">
+      <!-- video -->
+      <!-- <div class="bg-[#212121] md:py-16">
       <div
         class=" 2xl:h-[1043px] md:h-[500px] h-[400px] flex items-center justify-center relative"
       >
@@ -118,43 +180,43 @@
           loop
           controls
           autoplay
-          
+          muted
           src="./vid.mp4"
         ></video>
       </div>
-    </div>
+    </div> -->
 
-    <div class="bg-[#33FF91] border-y-4 border-black px-10 py-10">
-      <img
-        src="images/why.png"
-        alt=""
-        class="w-full max-w-[564px] mx-auto animate__bounceInUp wow animate__animated mb-5"
-      />
-      <p class="md:text-2xl text-center text-sm font-bold mb-10">
-        contract : 0x42009AE872fF0a21365E4389C318Ec67eBc29bF5
-      </p>
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
-        <div
-          class="box1 animate__fadeInUp animate__animated wow border-[6px] border-black md:h-[395px] h-[305px] flex items-center justify-center flex-col gap-2"
-        >
-          <h5 class="md:text-6xl text-4xl text-center">Tax:</h5>
-          <p class="text-4xl text-center">0/0 %</p>
-        </div>
-        <div
-          class="box2 animate__fadeInUp animate__animated wow border-[6px] border-black md:h-[395px] h-[305px] flex items-center justify-center flex-col gap-2 p-4"
-        >
-          <h5 class="md:text-6xl text-4xl text-center">Supply</h5>
-          <p class="text-4xl text-center">1,000,000,000</p>
-        </div>
-        <div
-          class="box3 animate__fadeInDown animate__animated wow border-[6px] border-black md:h-[395px] h-[305px] flex items-center justify-center flex-col gap-2 p-4"
-        >
-          <h5 class="md:text-6xl text-4xl text-center">Ticker</h5>
-          <p class="text-4xl text-center">$MLG</p>
+      <div class="border-y-4 border-black px-10 py-10">
+        <img
+          src="images/why.png"
+          alt=""
+          class="w-full max-w-[564px] mx-auto animate__bounceInUp wow animate__animated mb-5"
+        />
+        <p class="md:text-2xl text-center text-sm font-bold mb-10 bg-gray-100 text-black">
+          contract : 0x42009AE872fF0a21365E4389C318Ec67eBc29bF5
+        </p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+          <div
+            class="box3 animate__fadeInUp animate__animated wow border-[6px] border-black md:h-[395px] h-[305px] flex items-center justify-center flex-col gap-2"
+          >
+            <h5 class="md:text-6xl text-4xl text-center">Tax:</h5>
+            <p class="text-4xl text-center">0/0 %</p>
+          </div>
+          <div
+            class="box2 animate__fadeInUp animate__animated wow border-[6px] border-black md:h-[395px] h-[305px] flex items-center justify-center flex-col gap-2 p-4"
+          >
+            <h5 class="md:text-6xl text-4xl text-center">Supply</h5>
+            <p class="text-4xl text-center">1,000,000,000</p>
+          </div>
+          <div
+            class="box3 animate__fadeInDown animate__animated wow border-[6px] border-black md:h-[395px] h-[305px] flex items-center justify-center flex-col gap-2 p-4"
+          >
+            <h5 class="md:text-6xl text-4xl text-center">Ticker</h5>
+            <p class="text-4xl text-center">$MLG</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- <div
+      <!-- <div
       class="fins border-y-4 border-black py-10 px-5 md:h-[600px] h-[760px] flex items-center justify-center"
     >
       <div
@@ -192,58 +254,58 @@
         </div>
       </div>
     </div> -->
-    <div class="bg-[#1E1E1E] md:py-20 py-10">
-      <!-- links  -->
-      <div
-        class="flex items-center justify-center w-full md:max-w-[70%] px-5 gap-5 mx-auto"
-      >
-        <a href="dexslink" class="text-6xl text-white">
-          <!-- <img src="images/dexscr.png" alt="" class="w-full max-w-[285px]"> -->
-          420BLAZEIT
-        </a>
-      </div>
+      <div class="bg-[#1E1E1E] md:py-20 py-10">
+        <!-- links  -->
+        <div
+          class="flex items-center justify-center w-full md:max-w-[70%] px-5 gap-5 mx-auto"
+        >
+          <a href="dexslink" class="text-6xl text-white">
+            <!-- <img src="images/dexscr.png" alt="" class="w-full max-w-[285px]"> -->
+            420BLAZEIT
+          </a>
+        </div>
 
-      <div
-        class="flex items-center md:flex-row flex-col w-full md:max-w-[80%] max-w-full mx-auto px-5"
-      >
-        <div class="md:hidden block">
-          <!-- <video src="/Untitled_Project__2_-removebg-preview.png" alt="" ></video> -->
-          <img
-            src="./img.jpg"
-            style="margin: auto"
-            height="auto"
-            class="w-full max-w-[200px] left-right-image"
-          />
-        </div>
-      </div>
-      <div
-        class="flex items-center md:flex-row flex-col w-full max-w-full px-5 md:max-w-[80%] max-w-full mx-auto"
-      >
         <div
-          class="mx-auto"
-          s
-          style="display: flex; justify-content: center; margin-top: 3%"
+          class="flex items-center md:flex-row flex-col w-full md:max-w-[80%] max-w-full mx-auto px-5"
         >
-          <div class="mx-2 w-full my-auto">
-            <img src="./img2.jpeg" style="margin: auto" height="auto" />
-          </div>
-          <div class="mx-2 w-full my-auto">
-            <img src="./img3.jpg" style="margin: auto" height="auto" />
+          <div class="md:hidden block">
+            <!-- <video src="/Untitled_Project__2_-removebg-preview.png" alt="" ></video> -->
+            <img
+              src="./img.jpg"
+              style="margin: auto"
+              height="auto"
+              class="w-full max-w-[200px] left-right-image"
+            />
           </div>
         </div>
         <div
-          class="mx-auto"
-          style="display: flex; justify-content: center; margin-top: 3%"
+          class="flex items-center md:flex-row flex-col w-full max-w-full px-5 md:max-w-[80%] max-w-full mx-auto"
         >
-          <div class="mx-2 w-full my-auto">
-            <img src="./img.jpg" style="margin: auto" height="auto" />
+          <div
+            class="mx-auto"
+            s
+            style="display: flex; justify-content: center; margin-top: 3%"
+          >
+            <div class="mx-2 w-full my-auto">
+              <img src="./img2.jpeg" style="margin: auto" height="auto" />
+            </div>
+            <div class="mx-2 w-full my-auto">
+              <img src="./img3.jpg" style="margin: auto" height="auto" />
+            </div>
           </div>
-          <div class="mx-2 my-auto w-full">
-            <img src="./img2.jpeg" style="margin: auto" height="auto" />
+          <div
+            class="mx-auto"
+            style="display: flex; justify-content: center; margin-top: 3%"
+          >
+            <div class="mx-2 w-full my-auto">
+              <img src="./img.jpg" style="margin: auto" height="auto" />
+            </div>
+            <div class="mx-2 my-auto w-full">
+              <img src="./img2.jpeg" style="margin: auto" height="auto" />
+            </div>
           </div>
         </div>
-      </div>
-      <!-- <div
+        <!-- <div
         class="flex items-center md:flex-row flex-col w-full max-w-full px-5 md:max-w-[80%] max-w-full mx-auto pb-20"
       >
         <div
@@ -270,7 +332,7 @@
           </div>
         </div>
       </div> -->
-      <!-- <div class="flex items-center md:flex-row flex-col w-full max-w-full mx-auto px-5">
+        <!-- <div class="flex items-center md:flex-row flex-col w-full max-w-full mx-auto px-5">
       <div style="display: flex; justify-content: center; margin-top: 3%;">
         <img src="/1.png"  height="auto">
         <img src="/1.png"  height="auto">
@@ -280,104 +342,105 @@
         <img src="/1.png"  height="auto">
       </div>
     </div> -->
-      <div
-        class="flex items-center justify-between w-full md:max-w-[70%] px-5 gap-5 mx-auto mt-[5%]"
-      >
-        <a href="dexslink">
-          <img src="images/dexscr.png" alt="" class="w-full max-w-[285px]" />
-        </a>
-
-        <a
-          href="https://dexscreener.com/ethereum/0x0903a3558467192a84392a63c0d35a180140c3a65f26c7e50e5cd4990538f1c9"
-        >
-          <img
-            src="images/links%20%281%29.png"
-            alt=""
-            class="w-full max-w-[180px]"
-          />
-        </a>
-        <a href="dexviewlink">
-          <img src="images/link-2.png" alt="" class="w-full max-w-[220px]" />
-        </a>
-      </div>
-    </div>
-    <!-- ready section  -->
-    <div class="bg-[#33FF91] border-y-4 border-black">
-      <div
-        class="w-full md:max-w-[80%] px-5 mx-auto grid grid-cols-12 md:py-0 py-10"
-      >
-        <div class="md:col-span-3 col-span-full relative md:h-[386px] h-full">
-          <img
-            src="./logo.png"
-            alt=""
-            class="w-full md:max-w-[200px] max-w-[250px] rounded-full md:mx-0 mx-auto md:absolute top-bottom-image mt-16"
-          />
-        </div>
         <div
-          class="md:col-span-9 col-span-full flex flex-col justify-center gap-5"
+          class="flex items-center justify-between w-full md:max-w-[70%] px-5 gap-5 mx-auto mt-[5%]"
         >
-          <h4
-            class="md:text-6xl text-4xl animate__fadeInUp wow animate__animated"
+          <a href="dexslink">
+            <img src="images/dexscr.png" alt="" class="w-full max-w-[285px]" />
+          </a>
+
+          <a
+            href="https://dexscreener.com/ethereum/0x0903a3558467192a84392a63c0d35a180140c3a65f26c7e50e5cd4990538f1c9"
           >
-            Join with 420BLAZEIT !
-          </h4>
-          <p
-            class="md:text-2xl text-lg animate__fadeInUp wow animate__animated"
+            <img
+              src="images/links%20%281%29.png"
+              alt=""
+              class="w-full max-w-[180px]"
+            />
+          </a>
+          <a href="dexviewlink">
+            <img src="images/link-2.png" alt="" class="w-full max-w-[220px]" />
+          </a>
+        </div>
+      </div>
+      <!-- ready section  -->
+      <div class="border-y-4 border-black">
+        <div
+          class="w-full md:max-w-[80%] px-5 mx-auto grid grid-cols-12 md:py-0 py-10"
+        >
+          <div class="md:col-span-3 col-span-full relative md:h-[386px] h-full">
+            <img
+              src="./logo.png"
+              alt=""
+              class="w-full md:max-w-[200px] max-w-[250px] rounded-full md:mx-0 mx-auto md:absolute top-bottom-image mt-16"
+            />
+          </div>
+          <div
+            class="md:col-span-9 col-span-full flex flex-col justify-center gap-5"
           >
-            Join us in the 420BLAZEIT community.
-          </p>
-          <div class="flex items-center gap-2">
-            <a
-              href="https://x.com/i/communities/1939253982792499603"
-              class="animate__backInDown animate__animated wow"
+            <h4
+              class="md:text-6xl text-4xl animate__fadeInUp wow animate__animated"
             >
-              <img
-                src="images/twitter.png"
-                alt=""
-                class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
-              />
-            </a>
-            <a
-              href="https://t.me/mlgonklik"
-              class="animate__backInDown animate__animated wow"
+              Join with 420BLAZEIT !
+            </h4>
+            <p
+              class="md:text-2xl text-lg animate__fadeInUp wow animate__animated"
             >
-              <img
-                src="images/telegram.png"
-                alt=""
-                class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
-              />
-            </a>
-            <a
-              href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x42009ae872ff0a21365e4389c318ec67ebc29bf5"
-              class="animate__backInDown animate__animated wow"
-            >
-              <img
-                src="images/buy-now-2.png"
-                alt=""
-                class="w-full md:max-w-[179.29px] max-w-24 ml-5 hover:-rotate-6 transition ease-in-out delay-150"
-              />
-            </a>
+              Join us in the 420BLAZEIT community.
+            </p>
+            <div class="flex items-center gap-2">
+              <a
+                href="https://x.com/i/communities/1939253982792499603"
+                class="animate__backInDown animate__animated wow"
+              >
+                <img
+                  src="images/twitter.png"
+                  alt=""
+                  class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
+                />
+              </a>
+              <a
+                href="https://t.me/mlgonklik"
+                class="animate__backInDown animate__animated wow"
+              >
+                <img
+                  src="images/telegram.png"
+                  alt=""
+                  class="w-full md:max-w-14 max-w-10 transition ease-in-out delay-150 hover:scale-110"
+                />
+              </a>
+              <a
+                href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x42009ae872ff0a21365e4389c318ec67ebc29bf5"
+                class="animate__backInDown animate__animated wow"
+              >
+                <img
+                  src="images/buy-now-2.png"
+                  alt=""
+                  class="w-full md:max-w-[179.29px] max-w-24 ml-5 hover:-rotate-6 transition ease-in-out delay-150"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- footer  -->
+      <!-- footer  -->
 
-    <!-- copyriht  -->
-    <div class="bg-[#212121] border-b-4 border-black md:py-10 py-5 space-y-5">
-      <!-- <a href="mailto:support@MUFFIN.xyz">
+      <!-- copyriht  -->
+      <div class="bg-[#212121] border-b-4 border-black md:py-10 py-5 space-y-5">
+        <!-- <a href="mailto:support@MUFFIN.xyz">
       <p class="text-center md:text-2xl text-lg text-white animate__fadeInUp wow animate__animated">
         support@strategicmemereserve.fun
       </p>
     </a> -->
 
-      <p
-        class="text-center md:text-2xl text-lg text-white animate__fadeInUp wow animate__animated"
-      >
-        © 2025 420BLAZEIT . All Rights Reserved.
-      </p>
-    </div>
+        <p
+          class="text-center md:text-2xl text-lg text-white animate__fadeInUp wow animate__animated"
+        >
+          © 2025 420BLAZEIT . All Rights Reserved.
+        </p>
+      </div>
+    </main>
     <!-- script  -->
     <script>
       wow = new WOW({
