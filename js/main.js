@@ -1,0 +1,1 @@
+No Content: https://www.whiskeycoin.io/assets/js/main.js

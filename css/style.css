@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(../fonts/spicysoup-k7rjx.ttf);
+}
+
+body {
+    font-family: "Single Day", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+span {
+    display: inline-block;
+}
+
+.header,
+.about,
+.box1,
+.box2,
+.box3,
+.box4,
+.fins,
+.elips {
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header,
+.about {
+    background-image: url(../images/header.png);
+}
+
+.about {
+    background-image: url(../images/about.png);
+}
+
+.box1 {
+    background-image: url(../%281.html).png);
+}
+
+.box2 {
+    background-image: url(../images/why-box2.png);
+}
+
+.box3 {
+    background-image: url(../images/why-box3.png);
+}
+
+.box4 {
+    background-image: url(/assets/images/why-box4.png)
+}
+
+.fins {
+    background-image: url(../images/mins.png)
+}
+
+.elips {
+    background-image: url(../images/elips.png)
+}
+
+
+h5 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: #000;
+    font-family: font1;
+    font: 900;
+}
+
+h4 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    color: #FF4800;
+    font-family: font1;
+    font: 900;
+}
+
+
+
+
+.animated-image {
+    height: auto;
+    animation: zoomInOut 6s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: scale(0.8);
+        filter: blur(4px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+
+.left-right-image {
+    animation: moveLeftRight 0.5s infinite;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+        /* Adjust the distance as necessary */
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.top-bottom-image {
+    animation: moveTopBottom 0.5s infinite;
+}
+
+@keyframes moveTopBottom {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+        /* Adjust the distance as necessary */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .about {
+        background-image: url(../images/about-m.png);
+    }
+}
